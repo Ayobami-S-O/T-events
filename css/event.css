@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#demo-section .personalized-demo .demo-intro, #demo-section .personalized-demo .demo-form{
+    width: 45%;
+}
+
+#demo-section .personalized-demo .demo-form input[type="text"], input[type="email"]{
+    width: 100%;
+    padding: 8px;
+    outline: none;
+}
+
+@media(max-width:769px){
+    #advert-section .advert-image{
+        text-align: center;
+    }
+
+   #advert-section .advert .advert-text p{
+    padding: 0% 30%;
+   }
+}
+
+@media(max-width:426px){
+    #demo-section .personalized-demo{
+        flex-direction: column;
+    }
+
+    #demo-section .personalized-demo .demo-intro, #demo-section .personalized-demo .demo-form{
+        width: 100%;
+    }
+
+    #demo-section .personalized-demo .demo-intro .demo-text{
+        text-align: center;
+        padding: 5%;
+    }
+
+    #demo-section .personalized-demo .demo-intro .demo-text p{
+        width: 100% !important;
+    }
+
+    #partnership-section .partners .row{
+        text-align: center;
+    }
+
+    #footer-section .social-media{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media(max-width:426px){
+    #demo-section .personalized-demo .demo-intro .demo-text{
+        text-align: center;
+        padding: 0% 5%;
+    }
+
+    #advert-section .advert .advert-text p{
+        padding: 0%;
+    }
+}
+
+
+@media(max-width:321px){
+    #advert-section .advert-image img{
+        width: 70%;
+    }
+}
