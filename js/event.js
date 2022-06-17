@@ -62,7 +62,7 @@ function createPost(e){
       })
       .then((response) => response.json())
       .then((data) =>{console.log(data);
-      cardDocs.push(data);
+      cardDocs.unshift(data);
       console.log(cardDocs);
 
       let cardHolder = ""
