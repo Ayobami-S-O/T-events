@@ -12,6 +12,7 @@ function getCards(){
    .then((data) => { console.log(cardDocs)
 
     cardDocs = data;
+    renderDom(cardDocs)
     // let cardHolder = ""
     // cardDocs.forEach(card => {
     //     console.log(card)
@@ -64,7 +65,6 @@ function createPost(e){
       cardDocs.push(data);
       console.log(cardDocs);
 
-    //   cardDocs = data;
       let cardHolder = ""
       cardDocs.forEach(card => {
         console.log(card);
@@ -73,9 +73,9 @@ function createPost(e){
                     <div class="card">
                         <img src="img/Toye Ayan.jpg" class="card-img-top img-fluid" alt="Toye Ayan Image">
                         <div class="card-content">
-                        <p class="fw-bold">${card.id}</p>
-                        <h5 class="card-title fw-bold">${card.title}</h5>
-                        <p class="card-body">${card.body}</p>
+                        <p class="fw-bold text-center">${card.id}</p>
+                        <h5 class="card-title fw-bold text-center">${card.title}</h5>
+                        <p class="card-body text-center">${card.body}</p>
                         <div class="btn-box d-flex justify-content-between">
                         <a href="#" class="btn btn-primary" onclick="updatePost(${card.id})">Update</a>
                         <a href="#" class="btn btn-success" onclick="openView(${card.id})">View More</a>
@@ -172,9 +172,9 @@ function renderDom(arr){
                     <div class="card">
                         <img src="img/Toye Ayan.jpg" class="card-img-top img-fluid" alt="Toye Ayan Image">
                         <div class="card-content">
-                        <p class="fw-bold">${card.id}</p>
-                        <h5 class="card-title fw-bold">${card.title}</h5>
-                        <p class="card-body">${card.body}</p>
+                        <p class="fw-bold text-center">${card.id}</p>
+                        <h5 class="card-title fw-bold text-center">${card.title}</h5>
+                        <p class="card-body text-center">${card.body}</p>
                         <div class="btn-box d-flex justify-content-between">
                         <a href="#" class="btn btn-primary" onclick="updatePost(${card.id})">Update</a>
                         <a href="#" class="btn btn-success" onclick="openView(${card.id})">View More</a>
