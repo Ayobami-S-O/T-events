@@ -8,7 +8,7 @@
     width: 45%;
 }
 
-#demo-section .personalized-demo .demo-form input[type="text"], input[type="email"]{
+#demo-section .personalized-demo .demo-form input[type="text"],  textarea{
     width: 100%;
     padding: 8px;
     outline: none;

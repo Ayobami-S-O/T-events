@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+@media(max-width:426px){
+  #feature-section .feature .feature-text{
+    width: 100%!important;
+    padding: 0% 15%;
+    text-align: center;
+  }  
+
+
+}
